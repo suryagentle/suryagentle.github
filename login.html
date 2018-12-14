@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="sum.css">
+<head>
+  <title>Info-Bee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" /">
+  
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+   function check()
+{
+  var x = document.getElementById("pwd");
+  if(x.type==="password")
+  {
+    x.type="text";
+  }
+  else
+  {
+    x.type="password";
+  }
+} 
+function validate()
+{
+var x=document.regform.pwd.value;
+if(x.length <6)
+{
+  alert("password must me atleast 6 characters");
+  return false;
+}
+}
+
+
+
+var modal = document.getElementById('id1');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }}
+
+    function scrollWin() {
+    window.scrollBy(0,900);
+}
+</script>
+  <style>
+  body{
+   
+    
+    background: linear-gradient(to left top,rgba(255,255,255,0.5),#21D4FD 100%); 
+    background-repeat: no-repeat;
+    background-position: bottom-left;
+    background-size: 100%;
+    background-position: relative;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+  }
+
+.text{
+   
+    text-align:center;
+    background:url("flower1.jpg") center;
+    background-size:contain;
+    
+    width:  75vw;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    transform: translate(15%,0%);
+}
+
+.text1{
+   
+    text-align:center;
+    background:url("red.jpg") center;
+    background-size:contain;
+    font-size: 40px;
+    font-weight: bold;
+    width:  75vw;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    transform: translate(-30%,0%);
+    
+}
+@media screen and (max-width: 480px) {
+    .text1 {
+        text-align:center;
+    background:url("flower.jpg") center;
+    background-size:contain;
+    font-size: 40px;
+    font-weight: bold;
+    width:  75vw;
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+    margin: 10px 0px 0px 130px;
+    }
+    .navbar-brand {
+    	float: right;
+    	margin:-5px;
+
+
+    }
+    .navbar-toggle{
+    	margin-top: -40px ;
+    	margin-left: 10px;
+    	float: left;
+    	min-width: 95%;
+
+
+    }
+     input.form-control{
+     	width: 10%;
+     	float: left;
+     	margin-left: -40px;
+     	margin-top: 15px;
+
+     }
+     label[for=user]{
+visibility: hidden;
+  }
+label[for=pwd]{
+visibility: hidden;
+  }
+.checkbox{
+  margin-right: 37%; 
+  margin-top: 80px;
+
+}
+input[type=submit],button[type=button]{
+margin-right:  30%;
+width: 50%;
+}
+
+}
+
+
+
+
+  .container{
+   border: none;
+       background: linear-gradient(to left top,rgba(255,255,255,0.9),#21D4FD 100%); 
+
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: 6px 3px 105px 0px rgba(2,46,117,1);
+    transform:translate(0%,40%);
+    height: 500px;
+    width: 500px;
+    
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100%;
+    line-height: 20px;
+    
+
+  }
+  
+  form{
+  align-content: center;
+   text-align: center;
+  }
+input.form-control
+{
+padding: 20px;
+width: 60%;
+color: navy;
+border-color: crimson;
+align-content: center;
+transform: translate(100px,10px);
+
+
+
+}
+input[type=text]
+{
+  text-transform: uppercase;
+}
+
+input[type=password]
+{
+  text-transform: none;
+}
+label[for=user]{
+text-indent: -42%;
+  }
+label[for=pwd]{
+text-indent: -40%;
+  }
+.checkbox{
+  margin-right: 37%; 
+
+}
+input[type=submit],button[type=button]{
+margin-right:  30%;
+width: 50%;
+}
+
+
+.home:hover,.Achievements:hover,.Association:hover,.Daily:hover,.login:hover
+{
+  background-color: black;
+  border-radius: 15px;
+}
+.container1{
+	margin-left: 0px;
+	min-width:100%;
+}
+  
+  nav{
+  	margin-top: 30px;
+  	margin-left: 0px;
+  }
+  .affix {
+      top:-30px;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+  #id1{
+    z-index: 1;
+  }
+  
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  border: 3px solid Royalblue;
+  border-radius: 20px;
+  width: 300px;
+  height: 420px;
+  margin: 80px 0px 60px 50px;
+  text-align: center;
+  background-color: white;
+  font-family: corbel;
+}
+.card img{
+	border-radius: 16px;
+	border-bottom-left-radius: 0px;
+	 border-bottom-right-radius: 0px;
+}
+
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+#cardbutton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 0px 5px;
+  color: white;
+  background-color: Royalblue;
+  text-align: center;
+  cursor: pointer;
+  width: 296px;
+  font-size: 18px;
+   border-bottom-left-radius: 18px;
+   border-bottom-right-radius: 18px;
+}
+
+
+#cardbutton:hover, a:hover {
+  opacity: 0.9;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropup {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    bottom: 50px;
+    right:0px;
+    font-weight: bold;
+    
+}
+
+.dropup-content a {
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-family: arial-black;
+}
+
+
+
+.dropup:hover .dropup-content  {
+    display: block;
+    z-index: 1px;
+    
+}
+
+
+
+
+
+
+  </style>
+
+
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header ><img src="log.png"  width=8.5% height=1% style="float:left; margin-top: -20px;">
+<h1  class="text" style="font-size: 50px; font-weight: bold; text-align: center; transform: translate(30px,0px);  ">
+InF0_BEE</h1>
+
+<h1 class="text"style="font-size: 40px; font-weight: bold; text-align: center; ">IT Association Mahalingam college of Engg and Tech</h1></header> 
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" >
+
+  <div class="container-fluid"  >
+     <a class="navbar-brand" href="#">InFO-Bee</a>
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>  
+        <span class="icon-bar"></span>  
+        
+      </button>
+    
+    </div>
+    <div class="collapse navbar-collapse navbar-left ml-auto" id="myNavbar">
+      
+
+    <ul class="nav navbar-nav ">
+
+      <li class="home"><a href="#">Home</a></li>
+      <li class="Achievements"><a href="#" >Achievements</a></li>
+      <li class="Association" > <a href="#members" >Association Members</a></li>
+       <li class="Daily"><a href="#" >Daily updates</a></li>
+       <li class="Association"> <a href="#"  >Events</a></li>
+       <li class="Association"> <a href="#"  >Placements</a></li>
+      <li class="login"><a href="#" onclick="document.getElementById('id1').style.display='block'" style="width:auto;">login </a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class="container1">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active"><center>
+        <img src="it1.jpg"  style="  ">
+        </center>
+      </div>
+
+      <div class="item"><center>
+        <img src="it2.jpg"  style="width:auto; ">
+        </center>
+      </div>
+    
+      <div class="item"><center><img src="it3.jpg" style="width:auto;">
+        </center>
+
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+<div id="id1" class="modal" style="margin-top: 40px;">
+<div class="container"> 
+	 
+  <h2 class="text1" >Info-Bee</h2><br>
+  <form action="" method="post" name="regform" onsubmit="return validate()" >
+    <div class="form-group">
+      
+      <label for="user">User:</label>
+      <input type="text" class="form-control" id="user" placeholder="Roll number" name="user"  pattern="[0-9,a-z,0-9]{8}"required>
+    </div><br>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control"  name="pwd" id="pwd" placeholder="Enter password" required><br>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember" onclick="check()"> show password</label>
+    </div><br>
+    <div class="btn-group btn-group-lg">
+    <input type="submit" class="btn-primary"  value="submit" >
+     <button type="button" onclick="document.getElementById('id1').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+
+</div>
+</div>
+
+
+</div>  
+<h3 style="text-align:center; font-family: bold; font-size: 40px; font-family: corbel;" id="members" class="text">Association members</h3>
+<div class="row">
+	 <div class="col-sm-4 ">
+<div class="card">
+  <img src="sai.jpg" alt="" style="width:100%; height:50%">
+  <h1>Sairam  S</h1>
+  <p>Final Year</p>
+  <p class="title">President</p>
+  
+  <div class="dropup">
+ <p><button id="cardbutton" class="dropbtn" style="margin-top: 28px; width:294px; ">Contact</button1></p>
+ <div class="dropup-content">
+ 	<a href="" > number</a></div></div></div>
+</div>
+<div class="col-sm-4 ">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%; ">
+  <h1>Kaviya P</h1>
+  <p>Third Year</p>
+  <p class="title">Secretary</p>
+  <p></p>
+  <div class="dropup">
+ <p><button id="cardbutton" class="dropbtn" style="margin-top: 28px; width:294px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> number</a></div></div></div>
+</div>
+<div class="col-sm-4 ">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height: 50%; ">
+  <h1 >Vignesh Y</h1>
+  <p>Final Year</p>
+  <p class="title">Treasurer</p>
+  <div class="dropup">
+  
+ <p><button id="cardbutton" class="dropbtn" style="margin-top: 33px; width:294px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="pons.jpg" alt="" style="width:100% ;height:50% ">
+  <h1 >Ponmanikandan V</h1>
+  <p>Third Year</p>
+  <p class="title">Vice-President</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 33px; width:294px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> 9710962225</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="apple.png" alt="" style="width:100%; height:50%">
+  <h1 > Abhishek R </h1>
+  <p>Third Year</p>
+  <p class="title">Joint Secretary</p>
+   <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 33px; width:294px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100% ">
+  <h1 > Pradeep N </h1>
+  <p>Final Year</p>
+  <p class="title">EM-Event Coordinator</p>
+   <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 38px; width:294px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="saba.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Sabareeswaran S</h1>
+  <p>Third Year</p>
+  <p class="title">EM-Event Co-coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> 9080172257</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Rathnapriya T</h1>
+  <p>Third Year</p>
+  <p class="title">EM-Event Co-coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> number</a></div></div></div>
+</div>
+
+
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="raj.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Rajeshwar D</h1>
+  <p>Third Year</p>
+  <p class="title">EM-Co-curricular Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 33px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> 7094013844</a></div></div></div>
+</div>
+
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Harshitha S</h1>
+  <p>Third Year</p>
+  <p class="title">EM-Co-curricular Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href=""> number</a></div></div></div>
+
+</div>
+
+
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Guru Prasath M</h1>
+  <p>Second Year</p>
+  <p class="title">EM-Co-curricular Co-coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+
+</div>
+
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Padmini J</h1>
+  <p>Second Year</p>
+  <p class="title">EM-Co-curricular Co-coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1 >NithyaVishnuPriya </h1>
+  <p>Third Year</p>
+  <p class="title">Documentation Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1 >Yuvan Karthick K</h1>
+  <p>Second  Year</p>
+  <p class="title">Documentation Co-coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="ram.jpg" alt="" style="width:100%; height:50%">
+  <h1>Ramalingam S</h1>
+  <p>Final Year</p>
+  <p class="title">Placement Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1>Srikamali R</h1>
+  <p>Third Year</p>
+  <p class="title">Training Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1>Priyadharshini T</h1>
+  <p>Third Year</p>
+  <p class="title">SIG Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 30px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1>Nigleswarisivani </h1>
+  <p>Second Year</p>
+  <p class="title">SIG Co-coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 38px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+<div class="col-sm-4">
+<div class="card">
+  <img src="it1.jpg" alt="" style="width:100%; height:50%">
+  <h1>Barath R</h1>
+  <p>Third Year</p>
+  <p class="title">Magazine Coordinator</p>
+  <div class="dropup">
+ <p><button id="cardbutton" style="margin-top: 28px;">Contact</button1></p>
+ 	<div class="dropup-content">
+ 	<a href="">number</a></div></div></div>
+</div>
+
+
+
+
+</div>
+</body>
+</html>
